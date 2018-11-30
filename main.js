@@ -1,4 +1,3 @@
-//cambia immagini cliccando sui pallini
 //prova a mettere le immagini in un array di oggetti e ciclare
 
 //----------------------------------
@@ -46,13 +45,46 @@ $('.indietro').click(function() {
 });
 
 
-//CAMBIO CON PALLINI
+//CAMBIO CON PALLINI (mooooolto grezzo)
 
-$('.nav i').click(function(event) {
+$('.nav i').click(function() {
   $('.nav i').removeClass('fas');
   $('.nav i').addClass('far');
   $(this).addClass('fas');
   $(this).removeClass('far');
+});
+
+$('.nav i:nth-child(1)').click(function() {
+  $('.img-container img').removeClass('attiva')
+  $('.img-container img:nth-child(2)').addClass('attiva')
+});
+$('.nav i:nth-child(2)').click(function() {
+  $('.img-container img').removeClass('attiva')
+  $('.img-container img:nth-child(3)').addClass('attiva')
+});
+$('.nav i:nth-child(3)').click(function() {
+  $('.img-container img').removeClass('attiva')
+  $('.img-container img:nth-child(4)').addClass('attiva')
+});
+$('.nav i:nth-child(4)').click(function() {
+  $('.img-container img').removeClass('attiva')
+  $('.img-container img:nth-child(5)').addClass('attiva')
+});
+$('.nav i:nth-child(5)').click(function() {
+  $('.img-container img').removeClass('attiva')
+  $('.img-container img:nth-child(6)').addClass('attiva')
+});
+$('.nav i:nth-child(6)').click(function() {
+  $('.img-container img').removeClass('attiva')
+  $('.img-container img:nth-child(7)').addClass('attiva')
+});
+$('.nav i:nth-child(7)').click(function() {
+  $('.img-container img').removeClass('attiva')
+  $('.img-container img:nth-child(8)').addClass('attiva')
+});
+$('.nav i:nth-child(8)').click(function() {
+  $('.img-container img').removeClass('attiva')
+  $('.img-container img:nth-child(9)').addClass('attiva')
 });
 
 
