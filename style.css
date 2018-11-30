@@ -16,11 +16,12 @@ a {
 }
 .slider-wrapper {
   width: 80%;
-  height: 80%;
+  height: 90%;
   margin: auto;
-  background: blue;
+  background: lightgrey;
   padding: 0 30px;
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 .img-container {
   width: 100%;
@@ -34,6 +35,10 @@ img {
 }
 .indietro, .avanti {
   cursor: pointer;
+}
+i {
+  font-size: 30px;
+  margin: 10px;
 }
 .attiva {
   display: block;
