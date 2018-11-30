@@ -1,5 +1,5 @@
 //prova a mettere le immagini in un array di oggetti e ciclare
-
+//altro?
 //----------------------------------
 //CLASSICO CON MOUSE
 
