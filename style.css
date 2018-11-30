@@ -35,7 +35,6 @@ a {
   width: 80%;
   height: 90%;
   margin: auto;
-  background: lightgrey;
   padding: 0 30px;
   display: flex;
   align-items: center;
@@ -54,6 +53,10 @@ img {
 }
 .indietro, .avanti {
   cursor: pointer;
+}
+.indietro:hover, .avanti:hover {
+  background: rgba(87, 116, 143, 0.33);
+  border-radius: 5px;
 }
 i {
   font-size: 30px;

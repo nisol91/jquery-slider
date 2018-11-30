@@ -45,56 +45,56 @@ $('.indietro').click(function() {
   }
 });
 
+
 //CAMBIO CON PALLINI
-var immagini = [];
-for (var i = 1; i < 9; i++) {
-  immagini.push($('img:nth-child(' + i + ')'))
-}
-console.log(immagini);
 
-  $('.nav i:nth-child(' + i + ')').click(function() {
-    $('img:nth-child(' + i + ')').addClass('attiva');
-  });
+$('.nav i').click(function(event) {
+  $('.nav i').removeClass('fas');
+  $('.nav i').addClass('far');
+  $(this).addClass('fas');
+  $(this).removeClass('far');
+});
 
-  //---------------------------
-  //KEYPRESS come tasti ho usato '<' e '>'
 
-  $(document).keypress(function(event) {
-    if (event.which == 46) {
-      var activeImg = $('.img-container .attiva');
-      $('.img-container img').removeClass('attiva');
-      activeImg.next('img').addClass('attiva');
-      if (activeImg.hasClass('ultima')) {
-        $('.img-container img').first().addClass('attiva');
-      }
-      var activeCircle = $('.nav .fas');
-      $('.nav i').removeClass('fas');
-      activeCircle.addClass('far');
-      activeCircle.next('i').addClass('fas');
-      activeCircle.next('i').removeClass('far');
-      if (activeCircle.hasClass('ultima')) {
-        $('.nav i').first().addClass('fas');
-        $('.nav i').first().removeClass('far');
-      }
-    } else if (event.which == 44) {
-      var activeImg = $('.img-container .attiva');
-      $('.img-container img').removeClass('attiva');
-      activeImg.prev('img').addClass('attiva');
-      if (activeImg.hasClass('prima')) {
-        $('.img-container img').last().addClass('attiva');
-      }
-      var activeCircle = $('.nav .fas');
-      activeCircle.removeClass('fas');
-      activeCircle.addClass('far');
-      activeCircle.prev('i').addClass('fas');
-      activeCircle.prev('i').removeClass('far');
-      if (activeCircle.hasClass('prima')) {
-        $('.nav i').last().addClass('fas');
-        $('.nav i').last().removeClass('far');
-      }
+//---------------------------
+//KEYPRESS come tasti ho usato '<' e '>'
+
+$(document).keypress(function(event) {
+  if (event.which == 46) {
+    var activeImg = $('.img-container .attiva');
+    $('.img-container img').removeClass('attiva');
+    activeImg.next('img').addClass('attiva');
+    if (activeImg.hasClass('ultima')) {
+      $('.img-container img').first().addClass('attiva');
     }
-    console.log(event.which);
-  });
+    var activeCircle = $('.nav .fas');
+    $('.nav i').removeClass('fas');
+    activeCircle.addClass('far');
+    activeCircle.next('i').addClass('fas');
+    activeCircle.next('i').removeClass('far');
+    if (activeCircle.hasClass('ultima')) {
+      $('.nav i').first().addClass('fas');
+      $('.nav i').first().removeClass('far');
+    }
+  } else if (event.which == 44) {
+    var activeImg = $('.img-container .attiva');
+    $('.img-container img').removeClass('attiva');
+    activeImg.prev('img').addClass('attiva');
+    if (activeImg.hasClass('prima')) {
+      $('.img-container img').last().addClass('attiva');
+    }
+    var activeCircle = $('.nav .fas');
+    activeCircle.removeClass('fas');
+    activeCircle.addClass('far');
+    activeCircle.prev('i').addClass('fas');
+    activeCircle.prev('i').removeClass('far');
+    if (activeCircle.hasClass('prima')) {
+      $('.nav i').last().addClass('fas');
+      $('.nav i').last().removeClass('far');
+    }
+  }
+  console.log(event.which);
+});
 
 
 //----------------------------------------
