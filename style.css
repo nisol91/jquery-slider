@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  display: flex;
+  padding: 50px
+}
+.slider-wrapper {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  background: blue;
+  padding: 0 30px;
+  position: relative;
+}
+.img-container {
+  width: 100%;
+  height: 100%;
+}
+img {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+}
+.indietro, .avanti {
+  cursor: pointer;
+}
+.attiva {
+  display: block;
+}
