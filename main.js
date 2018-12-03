@@ -1,8 +1,37 @@
 //transizione tra le immagini
+//fai funzione di cambio classe (che poi puoi riutilizzare nei vari casi, tipo nella timing o nelle keypress)
 //prova a mettere le immagini in un array di oggetti e ciclare
 //altro?
 //----------------------------------
 //CLASSICO CON MOUSE
+//
+// function change_class() {
+//   var activeImg = $('.img-container .attiva');
+//   $('.img-container img').removeClass('attiva');
+//   activeImg.next('img').addClass('attiva');
+//   if (activeImg.hasClass('ultima')) {
+//     $('.img-container img').first().addClass('attiva');
+//  }
+// //pallini
+//   var activeCircle = $('.nav .fas');
+//   $('.nav i').removeClass('fas');
+//   activeCircle.addClass('far');
+//   activeCircle.next('i').addClass('fas');
+//   activeCircle.next('i').removeClass('far');
+//   if (activeCircle.hasClass('ultima')) {
+//     $('.nav i').first().addClass('fas');
+//     $('.nav i').first().removeClass('far');
+//   }
+// }
+
+
+//------------------------------------NOTA
+
+$(document).ready(function () {
+  //qui dovrei mettere tutto il mio JS. Il javascript si carica una volta che la pagina e' pronta.
+});
+
+//--------------------------------------
 
 $('.avanti').click(function() {
   var activeImg = $('.img-container .attiva');//IMPORTANTE: solo salvandoti prima in una variabile quale e' la img attiva, poi potro
@@ -11,8 +40,6 @@ $('.avanti').click(function() {
   if (activeImg.hasClass('ultima')) {
     $('.img-container img').first().addClass('attiva');
   }
-
-
 //pallini
   var activeCircle = $('.nav .fas');//IMPORTANTE se fai la variabile come qui e' sempre tutto piu comodo. Oppure generalizzi scrivendo i invece che fas
   $('.nav i').removeClass('fas');
